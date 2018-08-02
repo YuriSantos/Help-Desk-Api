@@ -18,7 +18,7 @@ public class ChangeStatus {
     @DBRef
     private User userChange;
 
-    private Date dataChangeStatus;
+    private Date dateChangeStatus;
 
     private StatusEnum status;
 
@@ -47,11 +47,11 @@ public class ChangeStatus {
     }
 
     public Date getDataChangeStatus() {
-        return dataChangeStatus;
+        return dateChangeStatus;
     }
 
     public void setDataChangeStatus(Date dataChangeStatus) {
-        this.dataChangeStatus = dataChangeStatus;
+        this.dateChangeStatus = dataChangeStatus;
     }
 
     public StatusEnum getStatus() {
