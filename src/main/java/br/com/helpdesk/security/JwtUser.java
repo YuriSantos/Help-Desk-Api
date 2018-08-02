@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+//Classe responsável por controlar quem está auteticado no sistema.
 public class JwtUser implements UserDetails {
 
     private static final long serialVersionUID = -7471177486146141709L;

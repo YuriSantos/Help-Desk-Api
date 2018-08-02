@@ -38,6 +38,7 @@ public class AuthenticationRestController {
     @Autowired
     private UserService userService;
 
+    //Metodo resposável por passar o usuario e a senha do token.
     @PostMapping("/api/auth")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtAuthenticationRequest authenticationRequest) throws AuthenticationException {
         final Authentication authentication = authenticationManager.authenticate(

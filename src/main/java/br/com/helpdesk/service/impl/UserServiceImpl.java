@@ -4,10 +4,12 @@ import br.com.helpdesk.entity.User;
 import br.com.helpdesk.repository.UserRepository;
 import br.com.helpdesk.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -27,7 +29,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findById(String id) {
-        return this.userRepository.findById(id);
+        return this.userRepository.findById(id).get();
     }
 
     @Override

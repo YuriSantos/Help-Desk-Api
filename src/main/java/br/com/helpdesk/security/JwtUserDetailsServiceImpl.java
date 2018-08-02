@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+//Classe de serviço resposável por manipular a classe do UserDetails(Spring).
 @Service
 public class JwtUserDetailsServiceImpl implements UserDetailsService {
 
