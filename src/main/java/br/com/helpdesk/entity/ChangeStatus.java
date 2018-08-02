@@ -1,10 +1,10 @@
 package br.com.helpdesk.entity;
 
 import br.com.helpdesk.enums.StatusEnum;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Id;
 import java.util.Date;
 
 @Document
