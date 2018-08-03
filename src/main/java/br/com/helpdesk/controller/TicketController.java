@@ -147,7 +147,7 @@ public class TicketController {
         User userRequest = userFromRequest(request);
         if(userRequest.getProfile().equals(ProfileEnum.ROLE_TECHNICIAN)) {
             tickets = ticketService.listTicket(page, count);
-        } else if(userRequest.getProfile().equals(ProfileEnum.ROLE_COSTUMER)){
+        } else if(userRequest.getProfile().equals(ProfileEnum.ROLE_CUSTOMER)){
             tickets = ticketService.findByCurrentUser(page, count, userRequest.getId());
         }
         response.setData(tickets);
@@ -179,7 +179,7 @@ public class TicketController {
                 } else {
                     tickets = ticketService.findByParameters(page, count, title, status, priority);
                 }
-            } else if(userRequest.getProfile().equals(ProfileEnum.ROLE_COSTUMER)){
+            } else if(userRequest.getProfile().equals(ProfileEnum.ROLE_CUSTOMER)){
                 tickets = ticketService.findByParametersAndCurrentUser(page, count, title, status, priority, userRequest.getId());
             }
         }
