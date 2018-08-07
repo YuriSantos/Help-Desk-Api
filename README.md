@@ -1,17 +1,15 @@
 # Help Desk API
 
-This project was generated with Spring Boot version 2.0.5
+Este sistema foi desenvolvido utilizando o Spring Boot versão 2.0.5.
+Sistema desenvolvido no curso de Angular 5, JWT, Spring Boot,REST,Security,Data e MongoDB
 
 ## Development server
 
-Compile and run the main.java for a dev server. The server works on the link: http://localhost:8080. 
+Compile e rode o arquivo Main.java para assim a aplicação rodar, o mesmo irá consumir serviços REST no seguinte link: http://localhost:8080.
 
-## Aplication Database
+## Para entrar na aplicação
 
-This application was developed for the MongoDB, if you have the MongoDB, Spring Data will create the database and tables(Collections on the noSQL case).
-If your Databases has a password, configure on applicacion.properties.
-
-To login on the application, enter the follow username: admin@helpdesk.com and the follow password: teste123.
+Para entrar na aplicação, entre com o seguinte usuário: admin@helpdesk.com e a seguinte senha: teste123.
 
 
-In order for the application to work, you need to have the Backend API turned on, to clone go to the follow link:
+O sistema funciona como um servidor rest e acredito ue qualquer aplicação web que gere e consuma verbos HTTP conforme as especificações dessa aplicação(Ver os arquivos de controllers), o sistema foi desenvolvido para alimentar o seguinte front, que foi desenvolvido em Angular 6: [link](https://github.com/YuriSantos/Help-Desk-Web), clone-o e rode-o. 
